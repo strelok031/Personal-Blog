@@ -1,0 +1,30 @@
+﻿
+
+.news__text {
+   margin-bottom: 40px;
+   position: relative;
+   width: 100%;
+   padding: 25px;
+   background: #202020;
+   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
+   border-radius: 5px;
+}
+.news__text-text {
+   padding-bottom: 30px;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 21px;
+   color: #D2D2D2;
+}
+.news__text-date {
+   position: absolute;
+   left: 25px;
+   bottom: 25px;
+   font-family: 'Lato';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 14px;
+   color: #828282;
+}

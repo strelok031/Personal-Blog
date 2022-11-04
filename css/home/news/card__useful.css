@@ -1,0 +1,122 @@
+﻿
+.card__useful {
+   margin-bottom: 40px;
+   width: 100%;
+   background: #202020;
+   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.35);
+   border-radius: 5px;
+}
+.useful-bc__img{
+   width: 100%;
+   size: 100%;
+   background-repeat: no-repeat;
+}
+.card__useful-content {
+   padding: 25px;
+   padding-top: 30px;
+}
+.card__useful-title {
+   margin-bottom: 20px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 40px;
+   color: #FFFFFF;
+}
+.card__useful-info {
+   margin-bottom: 20px;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 21px;
+   color: #D2D2D2;
+}
+.card__useful-bottom {
+   position: relative;
+   align-items: center;
+   display: flex;
+}
+.useful-bottom__date {
+   margin-right: 15px;
+   font-family: 'Lato';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 18px;
+   color: #828282;
+}
+ 
+.useful-bottom__teg {
+   margin-left: 15px;
+   font-family: 'Lato';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 18px;
+   color: #828282;
+}
+.useful-bottom__button {
+   text-decoration: none;
+   position: absolute;
+   right: 0px;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 20px;
+   text-align: right;
+   color: #107EFF;
+}
+.useful-bottom__button:hover{
+   transition: all .3s ease;
+   color:#FFFFFF;
+   padding: 12px 9px;
+   background: #107EFF;
+   border-radius: 25px
+}
+
+@media (max-width: 600px){
+   .card__useful-title{
+      font-size: 25px;
+   }
+
+   .card__useful-info{
+      line-height: 18px;
+   }
+   .useful-bottom__date{
+      margin-right: 8px;
+      font-size: 14px;
+      line-height: 17px;
+   }
+   .useful-bottom__teg {
+      margin-left: 8px;
+      font-size: 13px;
+      line-height: 17px;
+      color: #828282;
+   }
+}
+
+@media (max-width: 500px){
+   .bottom__button-edit{
+      font-size: 14px;
+      line-height: 17px;
+   }
+}
+@media (max-width: 400px){
+   .bottom__button-edit{
+      font-size: 14px;
+      line-height: 15px;
+   }
+   .card__useful-title{
+      font-size: 20px;
+   }
+   .useful-bottom__date{
+      margin-right: 5px;
+      font-size: 12px;
+      line-height: 14px;
+   }
+   .useful-bottom__teg {
+      margin-left: 5px;
+      font-size: 12px;
+      line-height: 14px;
+   }
+}

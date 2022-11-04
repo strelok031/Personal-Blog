@@ -1,0 +1,108 @@
+﻿
+
+.page__left-container {
+   max-width: 350px;
+   min-width: 300px;
+   padding-left: 20px;
+   padding-right: 15px;
+   height: 100%;
+   background-color: #202020;
+   justify-content: center;
+   text-align: center;
+}
+
+.page__left-profile {
+   justify-content: center;
+}
+
+.left-profile__avatar{
+   width: 130px;
+   height: 130px;
+   margin: 0 auto;
+   margin-top: -60px;
+}
+
+.left-profile__title {
+   margin-top: -8px; 
+   margin-bottom: 3px;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+   color: #FFFFFF;
+}
+.left-profile__subtitle {
+   margin-bottom: 17px;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 16px;
+   color: #DEDEDE;
+}
+.left-profile__links {
+   display: inline-flex;
+}
+.left-profile__link {
+   margin-right: 15px;
+   margin-bottom: 30px;
+}
+.left-profile__link:last-child{
+   margin-right: 0px;
+}
+.left-profile__text {
+   border-top: 1px solid #1C1C1C;
+   padding: 30px 0;
+   border-bottom: 1px solid #1C1C1C;;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 18px;
+   color: #FFFFFF;
+}
+
+.left-profile__buttons {
+   margin-top: 30px;
+}
+.left-rofile__btn-works {
+   text-decoration: none;
+   border: none;
+   padding: 13px 25px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 14px;
+   color: #FFFFFF;
+   background: #ED3024;
+   box-shadow: 0px 7px 17px -10px rgba(242, 63, 63, 0.2);
+   border-radius: 25px;
+}
+.left-rofile__btn-works:hover{
+   transition: all .3s ease;
+   text-decoration: underline;
+}
+#left__page-btn-work{
+   margin-right: 20px;
+}
+
+.left-rofile__btn-feedback {
+   border: none;
+   padding: 13px 20px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 14px;
+   color: #FFFFFF;
+   background: #3137C9;
+   box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
+   border-radius: 25px;
+}
+.left-rofile__btn-feedback:hover{
+   transition: all .3s ease;
+   text-decoration: underline;
+}
+
+@media (max-width: 900px){
+   .page__left{
+      display: none;
+   }
+}

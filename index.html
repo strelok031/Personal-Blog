@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width">
+
+   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet">
+
+
+   <link rel="stylesheet" href="./css/main/reset.css">
+   <link rel="stylesheet" href="./css/main/style.css">
+   <link rel="stylesheet" href="./css/page__left/page__left.css">
+   <link rel="stylesheet" href="./css/home/nav.css">
+   <link rel="stylesheet" href="./css/home/story.css">
+   <link rel="stylesheet" href="./css/home/somethingwrite.css">
+   <link rel="stylesheet" href="./css/home/news/news__text.css">
+   <link rel="stylesheet" href="./css/home/news/card__useful.css">
+   <link rel="stylesheet" href="./css/home/news/card__video.css">
+   <link rel="stylesheet" href="./css/home/page__transition.css">
+   <link rel="stylesheet" href="./css/profile/profile.css">
+   <link rel="stylesheet" type="text/css" href="slick/slick.css">
+   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+
+   <title>Personal blog</title>
+</head>
+
+<body>
+   <section class="page">
+      <div id="modal-1" data-modal class="fade-block hidden">
+         <div class="modal__window">
+            <div data-modal-close class="modal__window-cansel"><img src="./img/page__left/cancel.svg" alt="cansel">
+            </div>
+            <form class="modal__form">
+               <input type="text" placeholder="Name" class="profile__input ">
+               <input type="gmail" placeholder="E-mail" class="profile__input">
+               <input type="text" placeholder="Message text" class="profile__input ">
+               <input type="submit" class="profile__submit" placeholder="Save">
+            </form>
+            <div class="modal__form-info">
+               <p class="form-info__text">e-mail: <span class="info__text-line">info@mywebsite.ru</span></p>
+               <p class="form-info__text">tel: <span class="info__text-line">+943-232-856-22</span></p>
+            </div>
+         </div>
+      </div>
+      <div class="page__left">
+         <img src="./img/page__left/bc.svg" alt="" class="page__left-bc">
+         <div class="page__left-container">
+            <div class="page__left-profile">
+               <img class="left-profile__avatar" src="./img/page__left/avatar.png" alt="avatar">
+               <h1 class="left-profile__title">Dmitry Valak</h1>
+               <h2 class="left-profile__subtitle">Front-end developer blog</h2>
+               <div class="left-profile__links">
+                  <a href="#" class="left-profile__link"><img src="./img/page__left/insta.png" alt="icon"
+                        class="left-profile__img"></a>
+                  <a href="#" class="left-profile__link"><img src="./img/page__left/vk.svg" alt="icon"
+                        class="left-profile__img"></a>
+                  <a href="#" class="left-profile__link"><img src="./img/page__left/pinterest.svg" alt="icon"
+                        class="left-profile__img"></a>
+               </div>
+            </div>
+            <p class="left-profile__text">Front-end developer. Practitioner of web site layout. I have been creating
+               websites since 2012. Worked in several IT companies and worked more than 10,000 hours creating websites
+               of varying complexity.</p>
+            <div class="left-profile__buttons">
+               <a class="left-rofile__btn-works" id="left__page-btn-work" href="./works.html">My works</a>
+               <button data-modal-button="modal-1" class="left-rofile__btn-feedback">Write to me</button>
+            </div>
+         </div>
+      </div>
+      <div class="page__right">
+         <nav class="nav__menu">
+            <div class="burger">
+               <span></span>
+            </div>
+            <div class="burger__menu burger__menu-hidden">
+               <div data-burger="" class="burger__menu-up left__transition">
+                  <div class="burger-header">
+                     <input class="nav__menu-search burger__search" type="text" placeholder="Blog Search">
+                  </div>
+                  <img class="burger__menu-bc" src="./img/home/nav/bc.png" alt="bc">
+                  <div class="burger__menu-up-user">
+                     <div class="up-user__avatar">
+
+                        <img class="up-user__avatar-img" src="./img/page__left/avatar.png" alt="avatar">
+                        <div class="up-user__infouser">
+                           <h1 class="up-user__infouser-title">Dmitry Valak</h1>
+                           <h2 class="up-user__infouser-subtitle">Front-end developer blog</h2>
+                        </div>
+                     </div>
+                     <div class="down__links">
+                        <p class="down__links-title">ARTICLES</p>
+                        <ul class="down__list1">
+                           <li class="down__item"> <a class="down__link" href="./createSite.html">Website
+                                 development</a></li>
+                           <li class="down__item"> <a class="down__link" href="#">Internet Marketing</a></li>
+                           <li class="down__item"> <a class="down__link" href="#">Video promotion</a></li>
+
+                        </ul>
+                        <ul class="down__list2">
+                           <li class="down__item"><a class="down__link" href="./index.html">Home</a></li>
+                           <li class="down__item"><a class="down__link" href="./works.html">My works</a></li>
+                           <li class="down__item"><a class="down__link" href="#">Advertising</a></li>
+                           <li class="down__item"><a class="down__link" href="./profile.html">Profile</a></li>
+                        </ul>
+                     </div>
+                           <a class="left-rofile__btn-works down__left-btn" id="left__page-btn-work" href="./works.html">My works</a>
+                           <button data-modal-button="modal-1" class="left-rofile__btn-feedback down__right-btn">Write to me</button>
+                  </div>
+               </div>
+
+            </div>
+            <div class="nav__links">
+               <a href="./index.html" class="nav__menu-link">Home</a>
+               <div class="dropdown-container">
+                  <a href="#" class="nav__menu-link dropdown__button">articles<img class="dropdown-arrow"
+                        src="./img/home/nav/arrow.png" alt="arrow"></a>
+                  <div class="dropdown-content">
+                     <a class="dropdown-content-item" href="./createSite.html">website development</a>
+                     <a class="dropdown-content-item" href="#">Internet Marketing</a>
+                     <a class="dropdown-content-item" href="#">Video promotion</a>
+                  </div>
+               </div>
+               <a href="./works.html" class="nav__menu-link">My works</a>
+               <a href="#" class="nav__menu-link">Advertising</a>
+               <a href="./profile.html" class="nav__menu-link">Profile</a>
+            </div>
+            <input class="nav__menu-search" type="text" placeholder="Blog Search">
+         </nav>
+         <div class="story">
+            <div class="container">
+               <div class="swiper">
+                  <div class="slider">
+                     <div class="slide">
+                        <div class="story__card">
+                           <a class="story__card-link" href="#">
+                              <div class="story__card-content" id="story1">
+                                 <h1 class="story__card-title">I am relaxing in <br> nature</h1>
+                                 <h3 class="story__card-date">21.09.2020</h3>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="slide">
+                        <div class="story__card">
+                           <a class="story__card-link" href="#">
+                              <div class="story__card-content" id="story2">
+                                 <h1 class="story__card-title">Finishing project</h1>
+                                 <h3 class="story__card-date">15.09.2020</h3>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="slide">
+                        <div class="story__card">
+                           <a class="story__card-link" href="#">
+                              <div class="story__card-content" id="story3">
+                                 <h1 class="story__card-title">Moved into <br> a new apartment
+                                 </h1>
+                                 <h3 class="story__card-date">11.09.2020</h3>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="slide">
+                        <div class="story__card">
+                           <a class="story__card-link" href="#">
+                              <div class="story__card-content" id="story4">
+                                 <h1 class="story__card-title">Autumn is here!</h1>
+                                 <h3 class="story__card-date">28.08.2020</h3>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="slide">
+                        <div class="story__card">
+                           <a class="story__card-link" href="#">
+                              <div class="story__card-content" id="story4">
+                                 <h1 class="story__card-title">Autumn is here!</h1>
+                                 <h3 class="story__card-date">28.08.2020</h3>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="slide">
+                        <div class="story__card">
+                           <a class="story__card-link" href="#">
+                              <div class="story__card-content" id="story4">
+                                 <h1 class="story__card-title">Autumn is here!</h1>
+                                 <h3 class="story__card-date">28.08.2020</h3>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="story__cards">
+                  <div class="story__card">
+                     <a class="story__card-link" href="#">
+                        <div class="story__card-content" id="story1">
+                           <h1 class="story__card-title">I am relaxing in <br> nature</h1>
+                           <h3 class="story__card-date">21.09.2020</h3>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="story__card">
+                     <a class="story__card-link" href="#">
+                        <div class="story__card-content" id="story2">
+                           <h1 class="story__card-title">Finishing project</h1>
+                           <h3 class="story__card-date">15.09.2020</h3>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="story__card">
+                     <a class="story__card-link" href="#">
+                        <div class="story__card-content" id="story3">
+                           <h1 class="story__card-title">Moved into <br> a new apartment
+                           </h1>
+                           <h3 class="story__card-date">11.09.2020</h3>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="story__card">
+                     <a class="story__card-link" href="#">
+                        <div class="story__card-content" id="story4">
+                           <h1 class="story__card-title">Autumn is here!</h1>
+                           <h3 class="story__card-date">28.08.2020</h3>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <section class="somethingwrite">
+            <div class="container">
+               <form action="" class="form__input">
+                  <input class="somethingwrite__input" type="text" placeholder="Write something">
+                  <button type="photo"><img class="submit__photo" src="./img/home/input/avatar.png" alt="send"></button>
+                  <button type="submit"><img class="submit__img" src="./img/home/input/send.png" alt="send"></button>
+               </form>
+            </div>
+         </section>
+         <section class="news">
+            <div class="container">
+               <div class="news__text">
+                  <p class="news__text-text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et
+                     vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu
+                     egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas
+                     ornare vel volutpat.
+                  </p>
+                  <p class="news__text-date">21.06.2020</p>
+               </div>
+               <div class="card__useful">
+                  <div class="card__useful-bc"><img class="useful-bc__img" src="./img/home/cards/card1.jpg" alt="info">
+                  </div>
+                  <div class="card__useful-content">
+                     <h1 class="card__useful-title">Write somethingHow to write code quickly and painlessly?</h1>
+                     <p class="card__useful-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                        quidem, temporibus officia culpa dignissimos, sapiente maxime mollitia atque illo odio
+                        maiores
+                        architecto. Recusandae perferendis aut tempore aperiam sed repellendus dolorem.Lorem ipsum
+                        dolor
+                        sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum,
+                        posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas.
+                        Fusce
+                        arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                        volutpat.</p>
+                     <div class="card__useful-bottom">
+                        <p class="useful-bottom__date __data">21.06.2020</p>
+                        <img class="usefel-bottom__dot" src="./img/home/cards/dot.png" alt="dot">
+                        <p class="useful-bottom__teg">website creation</p>
+                        <a href="#" class="useful-bottom__button bottom__button-edit">read</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="card__video">
+                  <img class="card__video-video" src="./img/home/cards/card2.png" alt="video">
+                  <h1 class="card__useful-title">Bought a new laptop for 1000$</h1>
+                  <div class="card__useful-bottom">
+                     <p class="useful-bottom__date">21.06.2020</p>
+                     <img class="usefel-bottom__dot" src="./img/home/cards/dot.png" alt="dot">
+                     <p class="useful-bottom__teg">video promotion</p>
+                     <a href="#" class="useful-bottom__button bottom__button-edit">leave a comment</a>
+                  </div>
+               </div>
+               <div class="card__useful">
+                  <div class="card__useful-bc"><img class="useful-bc__img" src="./img/home/cards/card3.jpg" alt="info">
+                  </div>
+                  <div class="card__useful-content">
+                     <h1 class="card__useful-title">ReadHow I went to FrontEnd Conf 2021</h1>
+                     <p class="card__useful-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                        quidem, temporibus officia culpa dignissimos, sapiente maxime mollitia atque illo odio
+                        maiores
+                        architecto. Recusandae perferendis aut tempore aperiam sed repellendus dolorem.Lorem ipsum
+                        dolor
+                        sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum,
+                        posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas.
+                        Fusce
+                        arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                        volutpat.</p>
+                     <div class="card__useful-bottom">
+                        <p class="useful-bottom__date">21.06.2020</p>
+                        <img class="usefel-bottom__dot" src="./img/home/cards/dot.png" alt="dot">
+                        <p class="useful-bottom__teg">website creation</p>
+                        <a href="#" class="useful-bottom__button bottom__button-edit">read</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="page__transition">
+                  <div class="page__transition-links"></div>
+                  <a href="#" class="page__transition-link"><img class="transition-link__arrow"
+                        src="./img/home/page__transition/left-arrow.png" alt="arrow"></a>
+                  <a href="#" class="page__transition-link">1</a>
+                  <a href="#" class="page__transition-link">2</a>
+                  <a href="#" class="page__transition-link">3</a>
+                  <a href="#" class="page__transition-link"><img class="transition-link__arrow"
+                        src="./img/home/page__transition/right-arrow.png" alt="arrow"></a>
+               </div>
+            </div>
+         </section>
+      </div>
+   </section>
+   <script src="./js/burger.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+   <script src="./slick/slick.min.js"></script>
+   <script src="./js/swiper.js"></script>
+   <script src="./js/modal.js"></script>
+</body>
+
+</html>

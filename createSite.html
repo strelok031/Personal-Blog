@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>website development</title>
+
+   <link rel="stylesheet" href="./css/main/reset.css">
+   <link rel="stylesheet" href="./css/main/style.css">
+   <link rel="stylesheet" href="./css/page__left/page__left.css">
+   <link rel="stylesheet" href="./css/home/nav.css">
+   <link rel="stylesheet" href="./css/home/story.css">
+   <link rel="stylesheet" href="./css/home/somethingwrite.css">
+   <link rel="stylesheet" href="./css/home/news/news__text.css">
+   <link rel="stylesheet" href="./css/home/news/card__useful.css">
+   <link rel="stylesheet" href="./css/home/news/card__video.css">
+   <link rel="stylesheet" href="./css/home/page__transition.css">
+   <link rel="stylesheet" href="./css/createSite/createSite.css">
+   <link rel="stylesheet" href="./css/profile/profile.css">
+</head>
+
+<body>
+
+   <section class="page">
+      <div id="modal-1" data-modal class="fade-block hidden">
+         <div class="modal__window">
+            <div data-modal-close class="modal__window-cansel"><img src="./img/page__left/cancel.svg" alt="cansel"></div>
+            <form class="modal__form">
+               <input type="text" placeholder="Name" class="profile__input ">
+               <input type="gmail" placeholder="E-mail" class="profile__input">
+               <input type="text" placeholder="Message text" class="profile__input ">
+               <input type="submit" class="profile__submit" placeholder="Save">
+            </form>
+            <div class="modal__form-info">
+               <p class="form-info__text">e-mail: <span class="info__text-line">info@mywebsite.ru</span></p>
+               <p class="form-info__text">tel: <span class="info__text-line">+943-232-856-22</span></p>
+            </div>
+         </div>
+      </div>
+      <div class="page__left">
+         <img src="./img/page__left/bc.svg" alt="avatar" class="page__left-bc">
+         <div class="page__left-container">
+            <div class="page__left-profile">
+               <img class="left-profile__avatar" src="./img/page__left/avatar.png" alt="avatar">
+               <h1 class="left-profile__title">Dmitry Valak</h1>
+               <h2 class="left-profile__subtitle">Front-end developer blog</h2>
+               <div class="left-profile__links">
+                  <a href="#" class="left-profile__link"><img src="./img/page__left/insta.png" alt="icon"
+                        class="left-profile__img"></a>
+                  <a href="#" class="left-profile__link"><img src="./img/page__left/vk.svg" alt="icon"
+                        class="left-profile__img"></a>
+                  <a href="#" class="left-profile__link"><img src="./img/page__left/pinterest.svg" alt="icon"
+                        class="left-profile__img"></a>
+               </div>
+            </div>
+            <p class="left-profile__text">FFront-end developer. Practitioner of web site layout. I have been creating
+               websites since 2012. Worked in several IT companies and worked more than 10,000 hours creating websites
+               of varying complexity.</p>
+            <div class="left-profile__buttons">
+               <a class="left-rofile__btn-works" id="left__page-btn-work" href="./works.html">My works</a>
+               <button data-modal-button class="left-rofile__btn-feedback">Write to me</button>
+            </div>
+         </div>
+      </div>
+      <div class="page__right">
+         <nav class="nav__menu">
+            <div class="burger">
+               <span></span>
+            </div>
+            <div class="burger__menu burger__menu-hidden">
+               <div data-burger="" class="burger__menu-up left__transition">
+                  <div class="burger-header">
+                     <input class="nav__menu-search burger__search" type="text" placeholder="Blog Search">
+                  </div>
+                  <img class="burger__menu-bc" src="./img/home/nav/bc.png" alt="bc">
+                  <div class="burger__menu-up-user">
+                     <div class="up-user__avatar">
+
+                        <img class="up-user__avatar-img" src="./img/page__left/avatar.png" alt="avatar">
+                        <div class="up-user__infouser">
+                           <h1 class="up-user__infouser-title">Dmitry Valak</h1>
+                           <h2 class="up-user__infouser-subtitle">Front-end developer blog</h2>
+                        </div>
+                     </div>
+                     <div class="down__links">
+                        <p class="down__links-title">ARTICLES</p>
+                        <ul class="down__list1">
+                           <li class="down__item"> <a class="down__link" href="./createSite.html">Website
+                                 development</a></li>
+                           <li class="down__item"> <a class="down__link" href="#">Internet Marketing</a></li>
+                           <li class="down__item"> <a class="down__link" href="#">Video promotion</a></li>
+
+                        </ul>
+                        <ul class="down__list2">
+                           <li class="down__item"><a class="down__link" href="./index.html">Home</a></li>
+                           <li class="down__item"><a class="down__link" href="./works.html">My works</a></li>
+                           <li class="down__item"><a class="down__link" href="#">Advertising</a></li>
+                           <li class="down__item"><a class="down__link" href="./profile.html">Profile</a></li>
+                        </ul>
+                     </div>
+                     <a class="left-rofile__btn-works down__left-btn" id="left__page-btn-work" href="./works.html">My works</a>
+                     <button data-modal-button="modal-1" class="left-rofile__btn-feedback down__right-btn">Write to me</button>
+                  </div>
+               </div>
+
+            </div>
+            <div class="nav__links">
+               <a href="./index.html" class="nav__menu-link">Home</a>
+               <div class="dropdown-container">
+                  <a href="#" class="nav__menu-link dropdown__button">articles<img class="dropdown-arrow"
+                        src="./img/home/nav/arrow.png" alt="arrow"></a>
+                  <div class="dropdown-content">
+                     <a class="dropdown-content-item" href="./createSite.html">website development</a>
+                     <a class="dropdown-content-item" href="#">Internet Marketing</a>
+                     <a class="dropdown-content-item" href="#">Video promotion</a>
+                  </div>
+               </div>
+               
+               <a href="./works.html" class="nav__menu-link">My works</a>
+               <a href="#" class="nav__menu-link">Advertising</a>
+               <a href="./profile.html" class="nav__menu-link">Profile</a>
+            </div>
+            <input class="nav__menu-search" type="text" placeholder="Blog search">
+         </nav>
+         <div class="container">
+            <section class="createsitecard">
+               <div class="createsitecard__header">
+                  <div class="createsitecard__header-up">
+                     <a href="../" class="useful-bottom__date header-up__link">Go back</a>
+                     <div class="share-all">
+                        <button class="header-up__share">share</button>
+                        <img src="./img/createSite/share.png" alt="" class="header-up__img">
+                     </div>
+                  </div>
+                  <h1 class="createsitecard__header-title">How to create websites easily</h1>
+                  <div class="card__useful-bottom">
+                     <p class="useful-bottom__date">21.06.2020</p>
+                     <img class="usefel-bottom__dot" src="./img/home/cards/dot.png" alt="dot">
+                     <p class="useful-bottom__teg">website creation</p>
+                  </div>
+               </div>
+               <div class="createsitecard__info">
+                  <p class="createsitecard__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Elementum
+                     volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci
+                     auctor
+                     in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
+                     volutpat
+                     massa. Egestas ornare vel volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Elementum
+                     volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci
+                     auctor
+                     in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
+                     volutpat
+                     massa. Egestas ornare vel volutpat.
+                  </p>
+                  <p class="createsitecard__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Elementum
+                     volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci
+                     auctor
+                     in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
+                     volutpat
+                     massa. Egestas ornare vel volutpat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                     nesciunt possimus eum nisi voluptatem itaque illum ipsum odit vel quis, quam quisquam optio rem
+                     accusantium corrupti? Modi saepe reiciendis suscipit!</p>
+                  <img src="./img/createSite/img.jpg" alt="info" class="createsitecard__info-img">
+                  <p class="createsitecard__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Elementum
+                     volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci
+                     auctor
+                     in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
+                     volutpat
+                     massa. Egestas ornare vel volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Elementum
+                     volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci
+                     auctor
+                     in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
+                     volutpat
+                     massa. Egestas ornare vel volutpat.</p>
+                  <p class="createsitecard__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Elementum
+                     volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci
+                     auctor
+                     in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
+                     volutpat Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ad iure aut est explicabo
+                     veniam recusandae numquam id, voluptate quo, exercitationem sequi, maxime a fugiat quae saepe nobis
+                     similique placeat?
+                     massa. Egestas ornare vel volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Elementum
+                     volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci
+                     auctor
+                     in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed
+                     volutpat
+                     massa. Egestas ornare vel volutpat.</p>
+               </div>
+               <div class="createsitecard__else">
+                  <h1 class="createsitecard__else-title">Interesting to read</h1>
+                  <div class="createsitecard__else-links">
+                     <div class="createsitecard__else-link">
+                        <a href="#" class="else-link">Bought a new laptop for 1000$</a>
+                        <p class="else-link__date">21.06.2020</p>
+                     </div>
+                     <div class="createsitecard__else-link">
+                        <a href="#" class="else-link">How I went to FrontEnd Conf 2021</a>
+                        <p class="else-link__date">21.06.2020</p>
+                     </div>
+                     <div class="createsitecard__else-link">
+                        <a href="#" class="else-link">Bought a new laptop for 1000$</a>
+                        <p class="else-link__date">21.06.2020</p>
+                     </div>
+                     <div class="createsitecard__else-link">
+                        <a href="#" class="else-link">How to write code quickly and efficiently</a>
+                        <p class="else-link__date">21.06.2020</p>
+                     </div>
+                     
+                     
+                     
+                  </div>
+               </div>
+               <div class="createsitecard__discussion">
+                  <h1 class="createsitecard__discussion-title">Discussion</h1>
+                  <input class="discussion-title__input" type="text" placeholder="Comment text">
+                  <input class="discussion-title__submit" type="submit">
+               </div>
+            </section>
+         </div>
+      </div>
+   </section>
+   <script src="./js/burger.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+   <script src="./slick/slick.min.js"></script>
+   <script src="./js/swiper.js"></script>
+   <script src="./js/modal.js"></script>
+</body>
+
+</html>
